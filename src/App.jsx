@@ -10,7 +10,7 @@ export default function App() {
             <header>
                 <Nav />
             </header>
-            <main>
+            <main className="pageContainer">
                 <Home />
                 <About />
                 <Projects />

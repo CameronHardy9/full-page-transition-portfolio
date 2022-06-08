@@ -11,7 +11,7 @@
     overflow: hidden;
 }
 
-main {
+.pageContainer {
     display: flex;
     width: 400%;
     box-sizing: border-box;
