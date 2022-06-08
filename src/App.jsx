@@ -15,6 +15,7 @@ export default function App() {
             <Route path='/about' element={<About backgroundColor={backgroundColor} />} />
             <Route path='/projects' element={<Projects backgroundColor={backgroundColor} />} />
             <Route path='/contact' element={<Contact backgroundColor={backgroundColor} />} />
+            <Route path='/*' element={<h1>Page Not Found!</h1>} />
         </Routes>
     );
 };
