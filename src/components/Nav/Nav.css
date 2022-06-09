@@ -2,6 +2,7 @@
     position: fixed;
     display: flex;
     padding: 20px;
+    z-index: 1;
 }
 
 .nav ul {
