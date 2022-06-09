@@ -2,19 +2,20 @@ import './Nav.css';
 
 export default function Nav() {
     return(
+        //TODO: Add onClick to each button for CSS page transitions
         <nav className="nav">
             <ul>
                 <li>
-                    <a href="#home">Home</a>
+                    <button type='button' aria-label='Home'>Home</button>
                 </li>
                 <li>
-                    <a href="#about">About</a>
+                    <button type='button' aria-label='About'>About</button>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <button type='button' aria-label='Projects'>Projects</button>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <button type='button' aria-label='Contact'>Contact</button>
                 </li>
             </ul>
         </nav>
