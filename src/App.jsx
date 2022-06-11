@@ -25,7 +25,7 @@ export default function App() {
     ]
 
     useEffect(() => {
-        console.log('useEffect')
+        //TODO: Refactor to cycle through array using incrementing counter -- < array[count] >
         let colorPaletteCopy = [...colorPalette];
 
         for (let i = 0; i < 49 - pages.length; i++) {
