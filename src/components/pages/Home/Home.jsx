@@ -3,11 +3,18 @@ import './Home.css';
 export default function Home(){
     return(
         <section className="page grey">
-            <h1>
-                <span>Hi</span>
-                <span>I am</span>
-                <span>Cameron</span>
-            </h1>
+            <div className='homeContainer'>
+                <h1 className='homeH1'>
+                    <span>Hi</span>
+                    <span>I am</span>
+                    <span>Cameron</span>
+                </h1>
+                {/* <p className='homeP'>
+                    <span>Coffee Enthusiast</span>
+                    <span>Maker</span>
+                    <span>Coder</span>
+                </p> */}
+            </div>
         </section>
     );
 };
