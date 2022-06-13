@@ -16,7 +16,6 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(7, 1fr);
-    transition: all 2s;
     /* Uncomment below and set App.jsx translate X and Y to 0 to view whole grid */
     /* width: fit-content;
     height: fit-content; */
@@ -53,21 +52,21 @@
 }
 
 .red {
-    background-color: red;
+    background-color: rgb(255, 87, 21);
     color: white;
 }
 
 .blue {
-    background-color: blue;
+    background-color: rgb(41, 112, 254);
     color: white;
 }
 
 .orange {
-    background-color: orange;
+    background-color: rgb(255, 180, 42);
     color: black;
 }
 
 .grey {
-    background-color: rgb(231, 231, 231);
+    background: linear-gradient(-45deg, white, rgb(70, 70, 70));
     color: white;
 }
