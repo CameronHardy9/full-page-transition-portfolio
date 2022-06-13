@@ -1,24 +1,30 @@
 .homeContainer {
-    display: flex;
-    flex-direction: row-reverse;
+   position: relative;
 }
 
 .homeH1 > span {
     color: black;
     font-size: 10rem;
+    font-weight: 700;
 }
 
 .homeH1 {
+    position: absolute;
+    right: 1rem;
     display: flex;
     flex-direction: column;
     align-items: end;
 }
 
 .homeP > span {
-    font-size: 5rem;
+    font-size: 8rem;
+    padding: 1.2rem 0;
+    font-weight: 100;
+    color: rgb(192, 192, 192);
 }
 
 .homeP {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: start;
