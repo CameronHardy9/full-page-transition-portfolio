@@ -9,11 +9,11 @@ export default function Home(){
                     <span>I am</span>
                     <span>Cameron</span>
                 </h1>
-                {/* <p className='homeP'>
+                <p className='homeP'>
                     <span>Coffee Enthusiast</span>
+                    <span>Developer</span>
                     <span>Maker</span>
-                    <span>Coder</span>
-                </p> */}
+                </p>
             </div>
         </section>
     );
