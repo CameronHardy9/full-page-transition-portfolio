@@ -1,0 +1,23 @@
+.miniMapContainer {
+    position: fixed;
+    width: 30vw;
+    height: 30vh;
+    border: 1px solid black;
+    z-index: 10;
+    bottom: 10px;
+    left: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.miniMapPage {
+    border: 1px solid black;
+}
+
+.miniMapHead {
+    border: 2px solid red;
+    position: absolute;
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
