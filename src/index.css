@@ -9,6 +9,7 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    font-size: 62.5%;
 }
 
 .pageContainer {
@@ -22,7 +23,7 @@
 }
 
 .page {
-    padding: 50px;
+    padding: 4rem 2rem 1rem 2rem;
     width: 100vw;
     height: 100vh;
     /* Uncomment below and set App.jsx translate X and Y to 0 to view whole grid */
