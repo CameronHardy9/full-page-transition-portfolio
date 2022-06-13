@@ -1,4 +1,5 @@
 import Nav from "./components/Nav/Nav.jsx";
+import MiniMap from "./components/MiniMap/MiniMap.jsx";
 import Home from "./components/pages/Home/Home.jsx";
 import About from "./components/pages/About/About.jsx";
 import Projects from "./components/pages/Projects/Projects.jsx";
@@ -54,8 +55,9 @@ export default function App() {
         <>
             <header>
                 <Nav updateView={updateView} />
+                <MiniMap miniMapX={Math.abs(translateX) / 100} miniMapY={Math.abs(translateY) / (100 / 7)} differentialDelay={differentialDelay} />
             </header>
-            <main className="pageContainer" style={{transform: `translate(${translateX}%, ${translateY}%)`, transition: `all ${differentialDelay}s`}}>
+            <main className="pageContainer" style={{transition: `all ${differentialDelay}s`, transform: `translate(${translateX}%, ${translateY}%)`}}>
                 {pages.map((page) => {
                     return (
                         page
