@@ -20,7 +20,6 @@ export default function App() {
             );
         setTranslateX(x);
         setTranslateY(y);
-        console.log(differentialDelay);
     }
 
     const pages = [
