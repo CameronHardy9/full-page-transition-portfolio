@@ -67,6 +67,6 @@
 }
 
 .grey {
-    background: linear-gradient(-45deg, white, rgb(70, 70, 70));
+    background: radial-gradient(ellipse at bottom right, white, rgb(70, 70, 70));
     color: white;
 }
