@@ -1,6 +1,6 @@
-import 'HUD.css';
+import 'MiniMap.css';
 
-export default function HUD() {
+export default function MiniMap() {
     return(
         <>
             {/* Heads-up display for site location 
