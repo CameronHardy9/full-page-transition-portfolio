@@ -10,11 +10,17 @@ import uniqid from 'uniqid';
 export default function App() {
     const [translateX, setTranslateX] = useState(-100);
     const [translateY, setTranslateY] = useState(-14.2857);
+    const [differentialDelay, setDifferentialDelay] = useState(2);
     const [placeholders, setPlaceholders] = useState([]);
 
     function updateView(x, y) {
+        setDifferentialDelay(
+            //Formula to calculate transition delay based on distance to traverse
+            (((Math.abs(translateX - x) / 100) + (Math.abs(translateY - y) / (100 / 7))) / 1.5)
+            );
         setTranslateX(x);
         setTranslateY(y);
+        console.log(differentialDelay);
     }
 
     const pages = [
@@ -50,7 +56,7 @@ export default function App() {
             <header>
                 <Nav updateView={updateView} />
             </header>
-            <main className="pageContainer" style={{transform: `translate(${translateX}%, ${translateY}%)`}}>
+            <main className="pageContainer" style={{transform: `translate(${translateX}%, ${translateY}%)`, transition: `all ${differentialDelay}s`}}>
                 {pages.map((page) => {
                     return (
                         page
