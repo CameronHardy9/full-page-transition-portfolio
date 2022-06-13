@@ -1,7 +1,7 @@
 .nav {
     position: fixed;
     display: flex;
-    padding: 20px;
+    padding: 2rem;
     z-index: 1;
 }
 
@@ -9,7 +9,7 @@
     list-style: none;
     padding-left: 0;
     display: flex;
-    gap: 30px;
+    gap: 3rem;
 }
 
 .nav button {
@@ -20,4 +20,5 @@
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+    font-size: 1.2rem;
 }
