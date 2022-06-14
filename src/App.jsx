@@ -18,11 +18,13 @@ export default function App() {
         setDifferentialDelay(
             //Formula to calculate transition delay based on distance to traverse
             (((Math.abs(translateX - x) / 100) + (Math.abs(translateY - y) / (100 / 7))) / 1.5)
-            );
+        );
+        //Set new (x, y) coordinates
         setTranslateX(x);
         setTranslateY(y);
     }
 
+    //Actual content pages
     const pages = [
         <Home key={uniqid()} />,
         <About key={uniqid()} />,
@@ -30,6 +32,7 @@ export default function App() {
         <Contact key={uniqid()} />
     ]
 
+    //Loads placeholders into all empty spaces of a 7x7 grid
     useEffect(() => {
         //TODO: Refactor to cycle through array using incrementing counter -- < array[count] >
         let colorPaletteCopy = [...colorPalette];
@@ -57,7 +60,7 @@ export default function App() {
                 <Nav updateView={updateView} />
                 <MiniMap miniMapX={Math.abs(translateX) / 100} miniMapY={Math.abs(translateY) / (100 / 7)} differentialDelay={differentialDelay} />
             </header>
-            <main className="pageContainer" style={{transition: `all ${differentialDelay}s`, transform: `translate(${translateX}%, ${translateY}%)`}}>
+            <main className="pageContainer" style={{transition: `transform ${differentialDelay}s`, transform: `translate(${translateX}%, ${translateY}%)`}}>
                 {pages.map((page) => {
                     return (
                         page
