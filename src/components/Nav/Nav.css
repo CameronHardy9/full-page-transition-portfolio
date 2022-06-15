@@ -9,7 +9,7 @@
     list-style: none;
     padding-left: 0;
     display: flex;
-    gap: 3rem;
+    gap: 4rem;
 }
 
 .nav button {
@@ -20,7 +20,7 @@
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .nav button:hover {
