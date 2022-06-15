@@ -1,10 +1,39 @@
-.miniMapContainer {
+.miniMapSlider {
     position: fixed;
+    bottom: 1rem;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.miniMapSliderButton {
+    padding: 1rem;
+    background: rgb(192, 192, 192, 0.50);
+    border-radius: .3rem .3rem 0 0;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-size: 1.5rem;
+    transform: rotate(90deg);
+    position: absolute;
+    right: -6.1rem;
+}
+
+.miniMapSliderButton:hover {
+    color: white;
+}
+
+.miniMapGridContainer {
+    position: relative;
     width: 30vw;
     height: 30vh;
     z-index: 10;
-    bottom: 10px;
-    left: 10px;
+    border: 1px solid black;
+    border-radius: 0 .3rem .3rem 0;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(7, 1fr);
@@ -12,16 +41,16 @@
 
 .miniMapPage {
     border: 1px solid rgba(0, 0, 0, 0.50);
-    margin: 3px;
-    border-radius: 3px;
+    margin: .3rem;
+    border-radius: .3rem;
 }
 
 .miniMapHead {
-    border: 4px solid rgba(255, 0, 0, 0.50);
+    border: .4rem solid rgba(255, 0, 0, 0.50);
     position: absolute;
     width: calc(100% / 7);
     height: calc(100% / 7);
-    border-radius: 3px;
+    border-radius: .3rem;
 }
 
 .miniMapPage:nth-child(10) {
