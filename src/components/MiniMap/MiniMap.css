@@ -25,7 +25,8 @@
 }
 
 .miniMapSliderButton:hover {
-    color: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.50);
+    color: white;
 }
 
 .miniMapGridContainer {
