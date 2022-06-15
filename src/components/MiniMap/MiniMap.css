@@ -21,10 +21,11 @@
     transform: rotate(90deg);
     position: absolute;
     right: -6.1rem;
+    color: rgba(0, 0, 0, 0.50);
 }
 
 .miniMapSliderButton:hover {
-    color: white;
+    color: rgba(255, 255, 255, 0.50);
 }
 
 .miniMapGridContainer {
