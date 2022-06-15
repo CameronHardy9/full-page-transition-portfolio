@@ -1,0 +1,9 @@
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutContainer > h1 {
+    font-size: 10rem;
+}
