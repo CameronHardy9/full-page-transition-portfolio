@@ -5,6 +5,10 @@ import About from "./components/pages/About/About.jsx";
 import Projects from "./components/pages/Projects/Projects.jsx";
 import Contact from "./components/pages/Contact/Contact.jsx";
 import Placeholder from "./components/Placeholder.jsx";
+import Portfolio from "./components/pages/Projects/projectPages/Portfolio/Portfolio.jsx";
+import Pokedex from "./components/pages/Projects/projectPages/Pokedex/Pokedex.jsx";
+import KanbanGo from "./components/pages/Projects/projectPages/KanbanGo/KanbanGo.jsx";
+import CheckbookPocket from "./components/pages/Projects/projectPages/CheckbookPocket/CheckbookPocket.jsx";
 import { useEffect, useState } from 'react';
 import uniqid from 'uniqid';
 
@@ -28,8 +32,12 @@ export default function App() {
     const pages = [
         <Home key={uniqid()} />,
         <About key={uniqid()} />,
-        <Projects key={uniqid()} />,
-        <Contact key={uniqid()} />
+        <Projects updateView={updateView} key={uniqid()} />,
+        <Contact key={uniqid()} />,
+        <Portfolio key={uniqid()} />,
+        <CheckbookPocket key={uniqid()} />,
+        <KanbanGo key={uniqid()} />,
+        <Pokedex key={uniqid()} />
     ]
 
     //Loads placeholders into all empty spaces of a 7x7 grid
