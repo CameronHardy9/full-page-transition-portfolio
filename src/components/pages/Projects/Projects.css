@@ -1,14 +1,13 @@
 .projectsContainer {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     width: 100%;
     height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
 }
 
 .project {
-    border: 1px solid black;
-    width: 50%;
-    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,6 +17,7 @@
 
 .project:hover {
     filter: grayscale(100%) blur(1px);
+    cursor: pointer;
 }
 
 .project:nth-child(1) {
