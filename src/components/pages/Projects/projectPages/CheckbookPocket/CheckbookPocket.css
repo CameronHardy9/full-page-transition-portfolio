@@ -1,0 +1,9 @@
+.checkbookPocketContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbookPocketContainer > h1 {
+    font-size: 10rem;
+}

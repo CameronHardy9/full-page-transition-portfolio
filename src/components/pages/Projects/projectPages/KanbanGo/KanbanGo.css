@@ -1,0 +1,9 @@
+.kanbanGoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kanbanGoContainer > h1 {
+    font-size: 10rem;
+}
