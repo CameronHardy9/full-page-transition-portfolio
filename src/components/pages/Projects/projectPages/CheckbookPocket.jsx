@@ -10,7 +10,7 @@ export default function CheckbookPocket(){
                         <a href="https://checkbook-pocket.web.app" rel="noreferrer" target="_blank">Live Site</a>
                     </div>
                     <p>
-                        Project details here...
+                        Full-stack app using React on the frontend, Node/Express for the backend, and MongoDB for a database. Checkbook Pocket is a budget tracking app where users can set a budget and log their spending. Purchases are tracked by date and visualized in a list form where they can be added, edited, or deleted. Most UI/UX features were created using the Material UI library. User authentication and hosting is handled by Firebase.
                     </p>
                 </div>
             </div>
