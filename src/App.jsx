@@ -5,10 +5,10 @@ import About from "./components/pages/About/About.jsx";
 import Projects from "./components/pages/Projects/Projects.jsx";
 import Contact from "./components/pages/Contact/Contact.jsx";
 import Placeholder from "./components/Placeholder.jsx";
-import Portfolio from "./components/pages/Projects/projectPages/Portfolio/Portfolio.jsx";
-import Pokedex from "./components/pages/Projects/projectPages/Pokedex/Pokedex.jsx";
-import KanbanGo from "./components/pages/Projects/projectPages/KanbanGo/KanbanGo.jsx";
-import CheckbookPocket from "./components/pages/Projects/projectPages/CheckbookPocket/CheckbookPocket.jsx";
+import Portfolio from "./components/pages/Projects/projectPages/Portfolio.jsx";
+import Pokedex from "./components/pages/Projects/projectPages/Pokedex.jsx";
+import KanbanGo from "./components/pages/Projects/projectPages/KanbanGo.jsx";
+import CheckbookPocket from "./components/pages/Projects/projectPages/CheckbookPocket.jsx";
 import { useEffect, useState } from 'react';
 import uniqid from 'uniqid';
 
