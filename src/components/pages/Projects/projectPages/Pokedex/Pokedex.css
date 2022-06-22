@@ -1,9 +1,0 @@
-.pokedexContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pokedexContainer > h1 {
-    font-size: 10rem;
-}
