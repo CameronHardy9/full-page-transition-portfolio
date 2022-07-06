@@ -23,21 +23,29 @@
 .projectNav:nth-child(1) {
     background: url(./assets/Portfolio.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .projectNav:nth-child(2) {
     background: url(./assets/CheckbookPocket.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .projectNav:nth-child(3) {
     background: url(./assets/KanbanGo.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .projectNav:nth-child(4) {
     background: url(./assets/Pokedex.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .projectNav:hover {
