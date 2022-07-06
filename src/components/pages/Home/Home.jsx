@@ -3,10 +3,10 @@ import { useEffect } from 'react';
 
 export default function Home(){
     useEffect(() => {
-        const height = document.getElementById('homeH1').clientHeight;
+        const height = (document.getElementById('homeH1').clientHeight) / 3;
         style.h1 = {
-            fontSize: `${height / 3}px`,
-            lineHeight: `${height / 3}px`
+            fontSize: `${height}px`,
+            lineHeight: `${height}px`
         };
     }, []);
 
