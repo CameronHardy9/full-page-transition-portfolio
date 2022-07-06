@@ -1,31 +1,11 @@
-.homeContainer {
-   position: relative;
-}
-
-.homeH1 > span {
+#homeH1 > span {
     color: black;
-    font-size: 16rem;
     font-weight: 500;
 }
 
-.homeH1 {
-    position: absolute;
-    right: 1.5rem;
+#homeH1 {
     display: flex;
     flex-direction: column;
     align-items: end;
-}
-
-.homeP > span {
-    font-size: 8rem;
-    padding: 1.2rem 0;
-    font-weight: 100;
-    color: rgb(170, 170, 170);
-}
-
-.homeP {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    height: 100%;
 }
