@@ -34,10 +34,10 @@ export default function App() {
         <About key={uniqid()} />,
         <Projects updateView={updateView} key={uniqid()} />,
         <Contact key={uniqid()} />,
-        <Portfolio key={uniqid()} />,
-        <CheckbookPocket key={uniqid()} />,
-        <KanbanGo key={uniqid()} />,
-        <Pokedex key={uniqid()} />
+        <Portfolio updateView={updateView} magicNegativeNumber={-(100/7)} key={uniqid()} />,
+        <CheckbookPocket updateView={updateView} magicNegativeNumber={-(100/7)} key={uniqid()} />,
+        <KanbanGo updateView={updateView} magicNegativeNumber={-(100/7)} key={uniqid()} />,
+        <Pokedex updateView={updateView} magicNegativeNumber={-(100/7)} key={uniqid()} />
     ]
 
     //Loads placeholders into all empty spaces of a 7x7 grid
